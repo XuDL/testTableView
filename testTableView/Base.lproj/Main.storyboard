@@ -35,7 +35,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="labelText" destination="CRT-vZ-238" id="XAQ-8l-6fz"/>
+                                            <outlet property="labelText" destination="CRT-vZ-238" id="XwS-nV-EW2"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -47,6 +47,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="tableview" destination="oqR-2k-MYR" id="dRD-vg-4kF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

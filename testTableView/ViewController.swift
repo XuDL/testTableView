@@ -10,8 +10,10 @@ import UIKit
 
 class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource {
 
+    @IBOutlet weak var tableview: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableview.reloadData()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
