@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("tableCell", forIndexPath: indexPath) as ViewTableCell
+        cell.labelText.text = "hah"
 
+        
+        return cell
+    }
 }
 
